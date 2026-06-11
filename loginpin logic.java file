@@ -1,0 +1,15 @@
+public class PinValidator {
+
+  public static boolean isPinValid(String pin) {
+    if (pin == null || pin.length() != 6) {
+      return false;
+    }
+
+    // Invalid if pin is exactly 123456
+    if ("123456".equals(pin)) {
+      return false;
+    }
+
+    return true;
+  }
+}
